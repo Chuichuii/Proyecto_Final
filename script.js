@@ -35,3 +35,26 @@
     alert(`Gracias por contactarnos, ${name}! Pronto te responderemos.`);
     form.reset();
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const carruselContainer = document.querySelector('.carrusel-container');
+    const testItems = document.querySelectorAll('.test-item');
+    const prevButton = document.querySelector('.carrusel-prev');
+    const nextButton = document.querySelector('.carrusel-next');
+
+    let currentIndex = 0;
+
+    function updateCarrusel() {
+      carruselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : testItems.length - 1;
+      updateCarrusel();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex < testItems.length - 1) ? currentIndex + 1 : 0;
+      updateCarrusel();
+    });
+  });
