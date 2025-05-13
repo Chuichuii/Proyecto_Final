@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>ViaNova Tours - Agencia de Viajes</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="ViaNova logo.jpg">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="navbar" role="banner">
+    <div class="logo" tabindex="0" aria-label="Logo Go Travel RD">ViaNova Tours</div>
+    <nav id="nav" role="navigation" aria-label="Menú principal">
+      <a href="Autopresentacion.html" tabindex="0">Nosotros</a>
+      <a href="#destinations" tabindex="0">Destinos</a>
+      <a href="#services" tabindex="0">Servicios</a>
+      <a href="#testimonials" tabindex="0">Testimonios</a>
+      <a href="#contact" tabindex="0">Contacto</a>
+    </nav>
+    <div class="menu-toggle" aria-label="Abrir menú de navegación" role="button" tabindex="0" aria-expanded="false" aria-controls="nav" id="menuToggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</header>
+
+<section class="hero" role="region" aria-label="Imagen principal de la agencia">
+  <div class="hero-content">
+    <h1>Descubre el mundo con ViaNova Tours</h1>
+    <p>Experiencias únicas, viajes personalizados y atención VIP para cada aventura.</p>
+    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contacta con Nosotros</button>
+  </div>
+</section>
+
+<main class="container" role="main">
+
+<section id="destinations" class="destinations" aria-label="Destinos turísticos populares">
+  <h2>Destinos Populares</h2>
+  
+  <div class="carousel-container" id="destinationCarousel">
+    <div class="carousel-slides" aria-live="polite">
+     
+      <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 de 6" aria-hidden="true">
+        <img src="https://images.prismic.io/prismic-rd-2/aAk3QvIqRLdaBiV7_punta-cana-1440-thumb.jpg?auto=format%2Ccompress&fit=max&w=1920" 
+             alt="Playa en Punta Cana" class="carousel-image">
+        <div class="carousel-content">
+          <h3 class="carousel-title">Punta Cana</h3>
+          <p class="carousel-desc">Playas de arena blanca, resorts todo incluido y aguas cristalinas para relajarte y desconectar.</p>
+        </div>
+      </div>
+      
+     
+      <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 6" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=70" 
+             alt="Torre Eiffel en París" class="carousel-image">
+        <div class="carousel-content">
+          <h3 class="carousel-title">Francia</h3>
+          <p class="carousel-desc">El país del amor, sus iconos, arte y gastronomía para una experiencia cultural inolvidable.</p>
+        </div>
+      </div>
+      
+      <!-- Slide 3: Sídney -->
+      <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 de 6" aria-hidden="true">
+        <img src="https://media.istockphoto.com/id/512882300/photo/sydney-opera-house.jpg?s=612x612&w=0&k=20&c=W-CpLxrNiqZsuMzKnntkiWw3ODFaXjMfLRzU5cKY9zk=" 
+             alt="Isla Fitzroy cerca de Sídney" class="carousel-image">
+        <div class="carousel-content">
+          <h3 class="carousel-title">Sídney</h3>
+          <p class="carousel-desc">Un paraíso turístico lleno de maravillas, con sus impresionantes playas, la increíble fauna y la majestuosa Gran Barrera de Coral.</p>
+        </div>
+      </div>
+      
+      <!-- Slide 4: Nueva York -->
+      <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 de 6" aria-hidden="true">
+        <img src="https://media.istockphoto.com/id/538811669/photo/manhattan-panorama-with-its-skyscrapers-illuminated-at-dusk-new-york.jpg?s=612x612&w=0&k=20&c=Dhbrf7D3ALk1uJZWHB1S0kBfJT-aKbXxO3REBPBQTxE=" 
+             alt="Horizonte de Nueva York con rascacielos" class="carousel-image">
+        <div class="carousel-content">
+          <h3 class="carousel-title">Nueva York</h3>
+          <p class="carousel-desc">La ciudad que nunca duerme, llena de energía, cultura, compras y diversión para toda la familia.</p>
+        </div>
+      </div>
+      
+      <!-- Slide 5: Buenos Aires -->
+      <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 de 6" aria-hidden="true">
+        <img src="https://media.istockphoto.com/id/667138246/photo/argentina-buenos-aires-dawn-at-center-with-rush-hour.jpg?s=612x612&w=0&k=20&c=7hTjMbmr_2QngDOOy882JT141EDkrAOH4jtog2ErG4k=" 
+             alt="Obelisco de Buenos Aires por la noche" class="carousel-image">
+        <div class="carousel-content">
+          <h3 class="carousel-title">Buenos Aires</h3>
+          <p class="carousel-desc">Un destino vibrante y diverso, desde las majestuosas cataratas del Iguazú hasta los impresionantes paisajes de la Patagonia y los Andes.</p>
+        </div>
+      </div>
+      
+      <!-- Slide 6: Tokio -->
+      <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="6 de 6" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=800&q=70" 
+             alt="Templo en Tokio con árbol de cerezos" class="carousel-image">
+        <div class="carousel-content">
+          <h3 class="carousel-title">Tokio</h3>
+          <p class="carousel-desc">Fusiona tradición y modernidad en esta vibrante metrópolis llena de sorpresas y cultura milenaria.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controles del carrusel -->
+    <div class="carousel-controls">
+      <button class="carousel-button carousel-prev" aria-label="Destino anterior">&#10094;</button>
+      <button class="carousel-button carousel-next" aria-label="Destino siguiente">&#10095;</button>
+    </div>
+    
+    <!-- Indicadores -->
+    <div class="carousel-indicators" role="tablist"></div>
+  </div>
+</section>
+
+<section id="Paquetes" class="paquetes-destacados" aria-label="Paquetes turísticos destacados" tabindex="0">
+    <h2>Paquetes Destacados</h2>
+    <div class="package-grid">
+      <!-- Paquete 1 -->
+      <div class="package-card" aria-label="Paquete a Punta Cana">
+        <div class="package-image-container">
+          <img src="https://images.prismic.io/prismic-rd-2/aAk3QvIqRLdaBiV7_punta-cana-1440-thumb.jpg?auto=format%2Ccompress&fit=max&w=1920" alt="Playa en Punta Cana" class="package-image" />
+          <div class="package-badge">Más vendido</div>
+        </div>
+        <div class="package-content">
+          <h3 class="package-title">Escapada a Punta Cana</h3>
+          <div class="package-details">
+            <p class="package-duration"><i class="fas fa-clock"></i> 5 noches</p>
+            <p class="package-price">Desde <strong>$899</strong> USD</p>
+          </div>
+          <p class="package-desc">Disfruta de un resort todo incluido con playas paradisíacas, vuelos y traslados incluidos.</p>
+          <button class="btn-package">Ver detalles</button>
+        </div>
+      </div>
+      
+      <!-- Paquete 2 -->
+      <div class="package-card" aria-label="Paquete a París">
+        <div class="package-image-container">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=70" alt="Torre Eiffel en París" class="package-image" />
+          <div class="package-badge">Romántico</div>
+        </div>
+        <div class="package-content">
+          <h3 class="package-title">Romance en París</h3>
+          <div class="package-details">
+            <p class="package-duration"><i class="fas fa-clock"></i> 7 días</p>
+            <p class="package-price">Desde <strong>$1,299</strong> USD</p>
+          </div>
+          <p class="package-desc">Un viaje por la ciudad del amor, con tours guiados y cenas románticas incluidas.</p>
+          <button class="btn-package">Ver detalles</button>
+        </div>
+      </div>
+      
+      <!-- Paquete 3 -->
+      <div class="package-card" aria-label="Paquete a Nueva York">
+        <div class="package-image-container">
+          <img src="https://media.istockphoto.com/id/538811669/photo/manhattan-panorama-with-its-skyscrapers-illuminated-at-dusk-new-york.jpg?s=612x612&w=0&k=20&c=Dhbrf7D3ALk1uJZWHB1S0kBfJT-aKbXxO3REBPBQTxE=" alt="Horizonte de Nueva York" class="package-image" />
+          <div class="package-badge">Urbano</div>
+        </div>
+        <div class="package-content">
+          <h3 class="package-title">Aventura en Nueva York</h3>
+          <div class="package-details">
+            <p class="package-duration"><i class="fas fa-clock"></i> 6 días</p>
+            <p class="package-price">Desde <strong>$1,199</strong> USD</p>
+          </div>
+          <p class="package-desc">Descubre la ciudad que nunca duerme con entradas a atracciones y tour por Manhattan.</p>
+          <button class="btn-package">Ver detalles</button>
+        </div>
+      </div>
+      
+      <!-- Paquete 4 -->
+      <div class="package-card" aria-label="Paquete a Tokio">
+        <div class="package-image-container">
+          <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=800&q=70" alt="Templo en Tokio" class="package-image" />
+          <div class="package-badge">Cultural</div>
+        </div>
+        <div class="package-content">
+          <h3 class="package-title">Experiencia Japón</h3>
+          <div class="package-details">
+            <p class="package-duration"><i class="fas fa-clock"></i> 9 días</p>
+            <p class="package-price">Desde <strong>$2,299</strong> USD</p>
+          </div>
+          <p class="package-desc">Recorrido completo por Tokio y Kioto con guía en español y experiencias gastronómicas.</p>
+          <button class="btn-package">Ver detalles</button>
+        </div>
+      </div>
+      
+      <!-- Paquete 5 -->
+      <div class="package-card" aria-label="Paquete a Cancún">
+        <div class="package-image-container">
+          <img src="https://static.wixstatic.com/media/11062b_0e7c024aa8cf462eab847ae85332bf21~mv2.jpg/v1/fill/w_640,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cancun.jpg" alt="Playa en Cancún" class="package-image" />
+          <div class="package-badge">Familiar</div>
+        </div>
+        <div class="package-content">
+          <h3 class="package-title">Paraíso en Cancún</h3>
+          <div class="package-details">
+            <p class="package-duration"><i class="fas fa-clock"></i> 6 noches</p>
+            <p class="package-price">Desde <strong>$949</strong> USD</p>
+          </div>
+          <p class="package-desc">Resort frente al mar con actividades para toda la familia y visita a Chichén Itzá.</p>
+          <button class="btn-package">Ver detalles</button>
+        </div>
+      </div>
+      
+      <!-- Paquete 6 -->
+      <div class="package-card" aria-label="Paquete a Buenos Aires">
+        <div class="package-image-container">
+          <img src="https://media.istockphoto.com/id/667138246/photo/argentina-buenos-aires-dawn-at-center-with-rush-hour.jpg?s=612x612&w=0&k=20&c=7hTjMbmr_2QngDOOy882JT141EDkrAOH4jtog2ErG4k=" alt="Obelisco de Buenos Aires" class="package-image" />
+          <div class="package-badge">Cultural</div>
+        </div>
+        <div class="package-content">
+          <h3 class="package-title">Encanto Porteño</h3>
+          <div class="package-details">
+            <p class="package-duration"><i class="fas fa-clock"></i> 5 días</p>
+            <p class="package-price">Desde <strong>$799</strong> USD</p>
+          </div>
+          <p class="package-desc">Recorrido por Buenos Aires con clases de tango y excursión a estancia argentina.</p>
+          <button class="btn-package">Ver detalles</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="packages-cta">
+      <a href="Paquetes.html" class="btn-primary btn-ver-todos">Ver todos los paquetes</a>
+    </div>
+</section>
+  <section id="services" class="services" aria-label="Servicios ofrecidos por la agencia" tabindex="0">
+    <h2>Servicios</h2>
+    <div class="service-list">
+      <div class="service-item" aria-label="Servicio de reservación de vuelos">
+        <div class="service-icon" aria-hidden="true">✈️</div>
+        <h3 class="service-title">Reservas de Vuelos</h3>
+        <p class="service-desc">Te ayudamos a encontrar los mejores vuelos a destinos nacionales e internacionales.</p>
+      </div>
+      <div class="service-item" aria-label="Servicio de paquetes turísticos">
+        <div class="service-icon" aria-hidden="true">🏨</div>
+        <h3 class="service-title">Paquetes Turísticos</h3>
+        <p class="service-desc">Ofrecemos paquetes completos que incluyen hotel, tours y traslados a mano.</p>
+      </div>
+      <div class="service-item" aria-label="Asistencia personalizada durante viaje">
+        <div class="service-icon" aria-hidden="true">📞</div>
+        <h3 class="service-title">Asistencia 24/7</h3>
+        <p class="service-desc">Soporte personalizado durante todo tu viaje para resolver cualquier imprevisto.</p>
+      </div>
+      <div class="service-item" aria-label="Tours y excursiones locales">
+        <div class="service-icon" aria-hidden="true">🌄</div>
+        <h3 class="service-title">Tours Exclusivos</h3>
+        <p class="service-desc">Explora con nosotros excursiones y experiencias únicas y auténticas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrusel de Testimonios -->
+<section id="testimonials" class="testimonials" aria-label="Testimonios de clientes satisfechos">
+  <h2>Lo que dicen nuestros viajeros</h2>
+  
+  <div class="testimonials-carousel-container" id="testimonialsCarousel">
+    <div class="testimonials-carousel-slides">
+      <!-- Slide 1 -->
+      <div class="testimonials-carousel-slide active" role="group">
+        <div class="testimonials-content">
+          <blockquote class="testimonials-quote">
+            "Gracias a ViaNova Tours tuve el viaje de mis sueños. La atención y organización fueron impecables."
+          </blockquote>
+          <div class="testimonials-author">María Rodríguez</div>
+          <div class="testimonials-details">Viaje a Punta Cana</div>
+        </div>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="testimonials-carousel-slide" role="group">
+        <div class="testimonials-content">
+          <blockquote class="testimonials-quote">
+            "Un servicio personalizado que me ayudó a descubrir lugares increíbles y disfrutar al máximo."
+          </blockquote>
+          <div class="testimonials-author">Juan Pérez</div>
+          <div class="testimonials-details">Viaje a Francia</div>
+        </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="testimonials-carousel-slide" role="group">
+        <div class="testimonials-content">
+          <blockquote class="testimonials-quote">
+            "Organizar mi viaje con ViaNova Tours fue muy fácil y confiable."
+          </blockquote>
+          <div class="testimonials-author">Ana Gómez</div>
+          <div class="testimonials-details">Viaje a Nueva York</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controles del carrusel -->
+    <div class="testimonials-carousel-controls">
+      <button class="testimonials-carousel-button testimonials-carousel-prev">‹</button>
+      <button class="testimonials-carousel-button testimonials-carousel-next">›</button>
+    </div>
+  </div>
+</section>
+  <section id="contact" class="contact" aria-label="Formulario de contacto" tabindex="0">
+    <h2>Contáctanos</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required aria-required="true" placeholder="Tu nombre completo" />
+      
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required aria-required="true" placeholder="correo@ejemplo.com" />
+      
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" required aria-required="true" placeholder="Escribe tu consulta aquí..."></textarea>
+      
+      <button type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
+    </form>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  &copy; 2024 ViaNova Tours - Todos los derechos reservados.
+</footer>
+
+
+</body>
+</html>
