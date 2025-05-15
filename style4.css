@@ -1,0 +1,637 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2980b9, #3498db);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .package-badge {
+            display: inline-block;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        
+        .badge-popular {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        }
+
+        .badge-romantico {
+            background: linear-gradient(135deg, #ee9ca7, #ffdde1);
+        }
+
+        .package-details-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 2rem;
+        }
+
+        .package-gallery {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .thumbnail-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+
+        .package-info {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .package-title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .package-price {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .price-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ff6b6b;
+        }
+
+        .price-per {
+            font-size: 1rem;
+            color: #888;
+        }
+
+        .package-highlights {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .highlights-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .highlights-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #3498db;
+            border-radius: 50%;
+        }
+
+        .highlights-list {
+            list-style: none;
+        }
+
+        .highlights-list li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .highlights-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .booking-actions {
+            margin-top: 30px;
+        }
+
+        .btn-booking {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            margin-right: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .btn-booking:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        .additional-info {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .info-box {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .info-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #ecf0f1;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .info-icon i {
+            color: #3498db;
+            font-size: 1.2rem;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-title {
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .info-text {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .package-description {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3498db;
+        }
+
+        .description-text {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .itinerary {
+            margin-top: 30px;
+        }
+
+        .day-item {
+            margin-bottom: 25px;
+        }
+
+        .day-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .day-description {
+            color: #555;
+            padding-left: 20px;
+            border-left: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .reviews-section {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-stats {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .average-rating {
+            margin-right: 30px;
+        }
+
+        .rating-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+            line-height: 1;
+        }
+
+        .rating-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .rating-stars {
+            color: #ffc107;
+            font-size: 1.5rem;
+        }
+
+        .rating-breakdown {
+            flex: 1;
+        }
+
+        .rating-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .rating-label {
+            width: 30px;
+            margin-right: 10px;
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .rating-bar-container {
+            flex: 1;
+            height: 8px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .rating-bar {
+            height: 100%;
+            background-color: #ffc107;
+            border-radius: 4px;
+        }
+
+        .rating-count {
+            width: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .review-list {
+            margin-top: 30px;
+        }
+
+        .review-item {
+            padding: 20px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .review-item:last-child {
+            border-bottom: none;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .review-date {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .review-rating {
+            color: #ffc107;
+        }
+
+        .review-content {
+            color: #555;
+            line-height: 1.7;
+            margin-top: 10px;
+        }
+
+        .review-photo {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .review-photo img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .similar-packages {
+            margin-top: 50px;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .package-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .package-image-container {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .package-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .package-card:hover .package-image {
+            transform: scale(1.05);
+        }
+
+        .package-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .package-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .package-duration i {
+            margin-right: 5px;
+        }
+
+        .card-price {
+            font-size: 0.95rem;
+        }
+
+        .card-price strong {
+            font-size: 1.2rem;
+            color: #ff6b6b;
+        }
+
+        .btn-card {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-card:hover {
+            background-color: #2980b9;
+        }
+
+          footer {
+    background: #0284c7;
+    color: white;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    font-size: 0.9rem;
+    user-select: none;
+    margin-top: auto;
+}
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 992px) {
+            .package-details-container {
+                grid-template-columns: 1fr;
+            }
+
+            .main-image {
+                height: 300px;
+            }
+
+            .thumbnail {
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 1.5rem 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            .package-title {
+                font-size: 1.8rem;
+            }
+
+            .review-photo {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .packages-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thumbnail-gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .booking-actions {
+                display: block;
+            }
+
+            .btn-booking {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .review-photo {
+                grid-template-columns: 1fr;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+        }

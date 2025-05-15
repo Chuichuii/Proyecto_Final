@@ -11,11 +11,17 @@
             line-height: 1.6;
         }
         
-        .header {
+       .header {
             background: linear-gradient(135deg, #2980b9, #3498db);
             color: white;
             padding: 2rem;
             text-align: center;
+            position: relative;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
         }
         
         .header h1 {
@@ -313,19 +319,15 @@
             margin: 0 3px;
         }
         
-        .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-            margin-top: 4rem;
-        }
-        
-        .footer p {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: #ddd;
-        }
+        footer {
+    background: #0284c7;
+    color: white;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    font-size: 0.9rem;
+    user-select: none;
+    margin-top: auto;
+}
         
         .back-to-top {
             position: fixed;
