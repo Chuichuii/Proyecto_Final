@@ -18,7 +18,7 @@
       <a href="#destinations" tabindex="0">Destinos</a>
       <a href="#services" tabindex="0">Servicios</a>
       <a href="#testimonials" tabindex="0">Testimonios</a>
-      <a href="#contact" tabindex="0">Contacto</a>
+      <a href="Contactanos.html" tabindex="0">Contacto</a>
     </nav>
     <div class="menu-toggle" aria-label="Abrir menú de navegación" role="button" tabindex="0" aria-expanded="false" aria-controls="nav" id="menuToggle">
       <div></div>
@@ -32,7 +32,7 @@
   <div class="hero-content">
     <h1>Descubre el mundo con ViaNova Tours</h1>
     <p>Experiencias únicas, viajes personalizados y atención VIP para cada aventura.</p>
-    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contacta con Nosotros</button>
+    <a href="Contactanos.html"><button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contacta con Nosotros</button></a>
   </div>
 </section>
 
@@ -131,7 +131,7 @@
             <p class="package-price">Desde <strong>$899</strong> USD</p>
           </div>
           <p class="package-desc">Disfruta de un resort todo incluido con playas paradisíacas, vuelos y traslados incluidos.</p>
-          <button class="btn-package">Ver detalles</button>
+          <a href="Descripcion_destino.html"><button class="btn-package">Ver detalles</button></a>
         </div>
       </div>
       
@@ -148,7 +148,7 @@
             <p class="package-price">Desde <strong>$1,299</strong> USD</p>
           </div>
           <p class="package-desc">Un viaje por la ciudad del amor, con tours guiados y cenas románticas incluidas.</p>
-          <button class="btn-package">Ver detalles</button>
+          <a href="Descripcion_destino2.html"><button class="btn-package">Ver detalles</button></a>
         </div>
       </div>
       
@@ -165,7 +165,7 @@
             <p class="package-price">Desde <strong>$1,199</strong> USD</p>
           </div>
           <p class="package-desc">Descubre la ciudad que nunca duerme con entradas a atracciones y tour por Manhattan.</p>
-          <button class="btn-package">Ver detalles</button>
+         <a href="Descripcion_destino3.html"><button class="btn-package">Ver detalles</button></a> 
         </div>
       </div>
       
@@ -298,28 +298,25 @@
     </div>
   </div>
 </section>
-  <section id="contact" class="contact" aria-label="Formulario de contacto" tabindex="0">
-    <h2>Contáctanos</h2>
-    <form id="contactForm" novalidate>
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" required aria-required="true" placeholder="Tu nombre completo" />
-      
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" required aria-required="true" placeholder="correo@ejemplo.com" />
-      
-      <label for="message">Mensaje</label>
-      <textarea id="message" name="message" required aria-required="true" placeholder="Escribe tu consulta aquí..."></textarea>
-      
-      <button type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
-    </form>
-  </section>
 
 </main>
 
-<footer role="contentinfo">
-  &copy; 2024 ViaNova Tours - Todos los derechos reservados.
-</footer>
-
-
+<footer id="contacto">
+        <h3>ViaNova Tours</h3>
+        <p>Tu compañero de viajes de confianza</p>
+        <div class="social-icons">
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@viaNovaTours.com | Teléfono: 809-736-9300</p>
+            <p>Dirección: Av. Principal 123, Ciudad</p>
+        </div>
+        <p>&copy; 2025 ViaNova Tours. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
