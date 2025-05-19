@@ -10,6 +10,26 @@
             color: #333;
             line-height: 1.6;
         }
+        .back-button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+}
         
        .header {
             background: linear-gradient(135deg, #2980b9, #3498db);
