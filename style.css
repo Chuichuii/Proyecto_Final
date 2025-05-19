@@ -378,16 +378,84 @@
     background: #0369a1;
     outline: none;
   }
-  /* Footer */
-  footer {
-    background: #0284c7;
-    color: white;
-    text-align: center;
-    padding: 1.2rem 1rem;
-    font-size: 0.9rem;
-    user-select: none;
-    margin-top: auto;
-}
+ #contacto {
+            background: linear-gradient(135deg, #0a3d62 0%, #1e5f94 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 3px solid #d4af37;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+        }
+        
+        #contacto h3 {
+            font-size: 32px;
+            margin: 0 0 10px;
+            color: #d4af37;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        #contacto p {
+            margin: 8px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        #contacto p:first-of-type {
+            font-style: italic;
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #f0f0f0;
+        }
+        
+        .social-icons {
+            margin: 25px 0;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            margin: 0 8px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-icons a:hover {
+            background-color: #d4af37;
+            color: #0a3d62;
+            transform: translateY(-3px);
+        }
+        
+        #contacto p:nth-last-of-type(1) {
+            margin-top: 30px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 15px;
+        }
+        
+        @media (min-width: 768px) {
+            #contacto {
+                padding: 50px;
+            }
+            
+            .contact-info {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .contact-info p {
+                margin: 0 15px;
+            }
+        }
   
   html {
     scroll-behavior: smooth;
